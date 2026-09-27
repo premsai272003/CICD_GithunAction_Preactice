@@ -3,7 +3,7 @@ on:
    workflow_call:
 jobs:
    build:
-         runs-on: ubuntu-latest
+         runs-on: self-hosted
          steps:
             - name: Deploy the Code
               run: echo "Code Deployed to AWS EC2 Instance"
