@@ -5,5 +5,9 @@ jobs:
    build:
          runs-on: self-hosted
          steps:
+            - name: Code clone
+              uses: actions/checkout@v7
+            - name: Deploy via ngnix
+              run: cp index.html /var/www/html
             - name: Deploy the Code
               run: echo "Code Deployed to AWS EC2 Instance"
