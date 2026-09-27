@@ -8,6 +8,6 @@ jobs:
             - name: Code clone
               uses: actions/checkout@v7
             - name: Deploy via ngnix
-              run: cp index.html /var/www/html
+              run: cp Index.html /var/www/html
             - name: Deploy the Code
               run: echo "Code Deployed to AWS EC2 Instance"
