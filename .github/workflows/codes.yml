@@ -1,6 +1,6 @@
 name: Code
 on: 
-  push: 
+  workflow_call:  
 
 jobs:
   code-checkout:
