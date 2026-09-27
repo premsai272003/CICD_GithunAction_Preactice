@@ -7,7 +7,7 @@ jobs:
          steps:
             - name: Code clone
               uses: actions/checkout@v7
-            - name: Deploy via ngnix
+            - name: Deploy via nginx
               run: cp Index.html /var/www/html
             - name: Deploy the Code
               run: echo "Code Deployed to AWS EC2 Instance"
